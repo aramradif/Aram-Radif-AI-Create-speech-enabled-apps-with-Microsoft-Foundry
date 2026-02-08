@@ -14,7 +14,7 @@ SSML-based voice control
 
 Azure Speech SDK best practices
 
-📁 Project Structure
+Project Structure
 azure-speech-speaking-clock/
 │
 ├── audio/
@@ -29,7 +29,7 @@ azure-speech-speaking-clock/
 ├── .gitignore                    # Ignore secrets & virtual env
 └── LICENSE                       # Optional (MIT recommended)
 
-📄 README.md
+README.md
 # Azure Speech SDK – Speaking Clock App
 
 This project demonstrates how to build a speech-enabled application using **Azure AI Speech (Microsoft Foundry)**.
@@ -42,7 +42,7 @@ The application:
 
 ---
 
-## 🚀 Features
+## Features
 
 - Azure Speech SDK integration (Python)
 - Speech recognition from audio files
@@ -52,7 +52,7 @@ The application:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - Python 3.9+
 - Azure AI Speech SDK
@@ -61,7 +61,7 @@ The application:
 
 ---
 
-## 🔐 Prerequisites
+## Prerequisites
 
 - Azure subscription
 - Azure AI Speech resource
@@ -69,7 +69,7 @@ The application:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Clone the repository
 
@@ -85,7 +85,7 @@ venv\\Scripts\\activate    # Windows
 3. Install dependencies
 pip install -r requirements.txt
 
-⚙️ Configuration
+Configuration
 
 Create a .env file using the template:
 
@@ -97,7 +97,7 @@ Update with your Azure Speech credentials:
 SPEECH_KEY=your_azure_speech_key
 SPEECH_REGION=eastus
 
-▶️ Run the App
+Run the App
 python src/speaking_clock.py
 
 
@@ -119,18 +119,18 @@ This project uses SSML to control voice tone and pronunciation:
   </voice>
 </speak>
 
-🎧 Using Microphone & Speaker (Optional)
+Using Microphone & Speaker (Optional)
 
 If running locally with audio hardware, update AudioConfig:
 
 speech_sdk.AudioConfig(use_default_microphone=True)
 speech_sdk.audio.AudioOutputConfig(use_default_speaker=True)
 
-🧹 Cleanup
+ Cleanup
 
 After testing, delete your Azure Speech resource to avoid costs.
 
-📚 References
+ References
 
 Azure Speech SDK Documentation
 
@@ -140,14 +140,14 @@ Text-to-Speech API
 
 SSML Reference
 
-📄 License
+ License
 
 MIT License
 
 
 ---
 
-## 📄 speaking_clock.py (Core App)
+##  speaking_clock.py (Core App)
 
 ```python
 import os
@@ -208,15 +208,15 @@ def tell_time(speech_config):
 if __name__ == "__main__":
     main()
 
-📄 requirements.txt
+ requirements.txt
 azure-cognitiveservices-speech==1.42.0
 python-dotenv
 
-📄 .env.example
+ .env.example
 SPEECH_KEY=your_key_here
 SPEECH_REGION=eastus
 
-📄 .gitignore
+ .gitignore
 .env
 venv/
 __pycache__/
